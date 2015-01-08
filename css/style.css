@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:400,700,400italic);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F7F4E4;
+}
+
+header {
+    background: url(../img/header_plane.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+img {
+  margin: 50px 0;
+}
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+}
