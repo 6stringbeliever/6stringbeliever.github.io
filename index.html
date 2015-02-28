@@ -11,17 +11,19 @@
   </head>
   <body>
     <header>
-      <img src="img/code.png" alt="Shaun Can Code" class="hdr-logo"/>
+      <img srcset="img/code@2x.png 1130w,
+                   img/code.png 535w"
+        src="img/code.png" alt="Shaun Can Code" class="hdr-logo"/>
     </header>
     <section id="projects" data-bind="foreach: projects">
       <div class="project">
         <h1 data-bind="text: name"></h1>
         <p data-bind="text: description"></p>
-        <p data-bind="if: tools"><strong>Tools:</strong>
+        <p data-bind="if: tools" class="proj-info"><strong>Tools:</strong>
           <span data-bind="text: tools"></span></p>
-        <p data-bind="if: projecturl"><strong>View:</strong>
+        <p data-bind="if: projecturl" class="proj-info"><strong>View:</strong>
           <a data-bind="text: projecturl.name, attr: {href: projecturl.url}"></a></p>
-        <p data-bind="if: sourceurl"><strong>Source:</strong>
+        <p data-bind="if: sourceurl" class="proj-info"><strong>Source:</strong>
           <a data-bind="text: sourceurl.name, attr: {href: sourceurl.url}"></a></p>
       </div>
     </section>

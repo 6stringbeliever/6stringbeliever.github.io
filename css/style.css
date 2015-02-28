@@ -42,7 +42,11 @@ h2 {
 p {
   font-family: "Fira Sans", sans-serif;
   font-weight: 300;
-  margin: 6px 0;
+  margin: 8px 0;
+}
+
+.proj-info {
+  margin: 4px 0;
 }
 
 a {
@@ -92,11 +96,11 @@ footer {
 }
 
 .project:nth-child(odd) {
-  background-color: rgba(162, 162, 162, 0.8);
+  background-color: rgba(193, 193, 193, 0.9);
 }
 
 .project:nth-child(even) {
-  background-color: rgba(193, 193, 193, 0.9);
+  background-color: rgba(215, 215, 215, 0.92);
 }
 
 .hdr-logo {
