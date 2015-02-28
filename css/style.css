@@ -1,8 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Fira+Sans:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic);
 
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 16px;
+  color: #333;
 }
 
 body {
@@ -21,13 +26,44 @@ img {
   margin: 50px 0;
 }
 
-h1 {
+h1, h2 {
   font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 150%;
 }
 
 p {
   font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  margin: 6px 0;
 }
+
+a {
+  text-decoration: none;
+  color: #205e88;
+  font-weight: 400;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: #10a8ea;
+}
+
+footer a {
+  color: #60b1f7;
+}
+
+footer a:hover {
+  color: #e4e4e4;
+}
+
 /* #ad3a20; #474e5d */
 footer {
   background-color: #27313d;
@@ -46,8 +82,11 @@ footer {
   padding: 24px;
   width: 900px;
   max-width: 85%;
-  border: 2px solid #3a3a3a;
-  border-radius: 20px;
+  border: 2px solid #606060;
+  border-radius: 0 20px 20px 20px;
+  -webkit-box-shadow: 4px 4px 3px rgba(71, 83, 94, 0.5);
+     -moz-box-shadow: 4px 4px 3px rgba(71, 83, 94, 0.5);
+          box-shadow: 4px 4px 3px rgba(71, 83, 94, 0.5);
 }
 
 .project:nth-child(odd) {
@@ -56,4 +95,8 @@ footer {
 
 .project:nth-child(even) {
   background-color: rgba(193, 193, 193, 0.9);
+}
+
+.hdr-logo {
+  max-width: 60%;
 }
