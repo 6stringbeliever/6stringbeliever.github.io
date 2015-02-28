@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #F7F4E4;
+  background: url(../img/noisy_grid.png);
 }
 
 header {
@@ -28,17 +28,30 @@ h1 {
 p {
   font-family: "Fira Sans", sans-serif;
 }
-
+/* #ad3a20; #474e5d */
 footer {
-  margin: 48px auto;
+  background-color: #27313d;
+  padding: 48px 0;
+}
+
+.about {
+  color: #e4e4e4;
+  margin: 0px auto;
   width: 900px;
 }
 
 .project {
   margin: 48px auto;
+  padding: 24px;
   width: 900px;
+  border: 2px solid #3a3a3a;
+  border-radius: 20px;
 }
 
 .project:nth-child(odd) {
-  background-color: grey;
+  background-color: rgba(162, 162, 162, 0.8);
+}
+
+.project:nth-child(even) {
+  background-color: rgba(193, 193, 193, 0.9);
 }
