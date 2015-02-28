@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: url(../img/header_plane.jpg) no-repeat center center; 
+    background: url(../img/header_plane.jpg) no-repeat center center;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -27,6 +27,11 @@ h1 {
 
 p {
   font-family: "Fira Sans", sans-serif;
+}
+
+footer {
+  margin: 48px auto;
+  width: 900px;
 }
 
 .project {
