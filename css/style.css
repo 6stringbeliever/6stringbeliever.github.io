@@ -38,12 +38,14 @@ footer {
   color: #e4e4e4;
   margin: 0px auto;
   width: 900px;
+  max-width: 85%;
 }
 
 .project {
   margin: 48px auto;
   padding: 24px;
   width: 900px;
+  max-width: 85%;
   border: 2px solid #3a3a3a;
   border-radius: 20px;
 }
