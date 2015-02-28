@@ -4,8 +4,7 @@ var projects = { 'projects': [{
   'images': [],
   'description': 'Single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data from Wikipedia and Foursquare via AJAX.',
   'tools': 'HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API',
-  'projecturl': {'name': '',
-                 'url': ''},
+  'projecturl': null,
   'sourceurl': {'name': 'github',
                  'url': 'https://github.com/6stringbeliever/neighborhood-map'}
 },
@@ -16,16 +15,14 @@ var projects = { 'projects': [{
   'tools': 'HTML, Sass/CSS',
   'projecturl': {'name': 'shaunandmaura.com',
                  'url': 'http://shaunandmaura.com'},
-  'sourceurl': {'name': '',
-                 'url': ''}
+  'sourceurl': null
 },
 {
   'name': 'Canvas Game',
   'images': [],
   'description': 'HTML5 canvas game. Collect gems and avoid getting hit by bugs. An exercise in object-oriented JavaScript for the Udacity Front-End Web Development nanodegree.',
   'tools': 'JavaScript',
-  'projecturl': {'name': '',
-                 'url': ''},
+  'projecturl': null,
   'sourceurl': {'name': 'github',
                  'url': 'https://github.com/6stringbeliever/frontend-nanodegree-arcade-game'}
 },
@@ -41,12 +38,11 @@ var projects = { 'projects': [{
 {
   'name': 'Pico Portfolio',
   'images': [],
-  'description': '',
+  'description': 'A plug-in for the Pico CMS for creating nifty portfolio sites.',
   'tools': 'PHP',
-  'projecturl': {'name': '',
-                 'url': ''},
-  'sourceurl': {'name': '',
-                 'url': ''}
+  'projecturl': null,
+  'sourceurl': {'name': 'github',
+                 'url': 'https://github.com/6stringbeliever/pico_portfolio'}
 }]};
 
 ko.applyBindings(projects);
