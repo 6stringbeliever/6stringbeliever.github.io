@@ -1,5 +1,10 @@
 $(function() {
 
+  // TODO: Markers
+  // TODO: Responsive
+  // TODO: Error handling when not getting data
+  // TODO: Photos layout
+  
   /*
       Stadium object. Holds all the data for a single stadium.
   */
@@ -138,8 +143,7 @@ $(function() {
       }
     },
     /*
-        Checks if photos have already been downloaded from Foursquare. If not,
-        download asynchronously and update when complete.
+        Download photos asynchronously from 4sq and update when complete.
     */
     getFoursquarePhotos: function(stad) {
       if (!self.gettingFoursquarePhotos) {
@@ -226,7 +230,7 @@ $(function() {
 
     self.stadiums = ko.observableArray([]);
     self.stadiums.extend({ rateLimit: {
-                              timeout: 10,
+                              timeout: 20,
                               method: "notifyWhenChangesStop"} });
     for (var stadium in stadiumData) {
       self.stadiums.push(new Stadium(stadiumData[stadium]));
@@ -288,7 +292,6 @@ $(function() {
 
       /* Loop through all the stadiums. Hide the stadium if it doesn't match
          the league filters. */
-      // TODO: Try making stadiums pausable instead of stadium.visible
       for (i = 0; i < self.stadiums().length; i++) {
         stad = self.stadiums()[i];
         visible = stadiumClearsFilters(stad, searchterms, visibleleagues);
@@ -297,7 +300,10 @@ $(function() {
           emptysearch = false;
         }
       }
-      //self.stadiums.valueHasMutated();
+      /* Stadiums isn't dependent on visible since we call visible.peek()
+         in the map binding, so we have to call valueHasMutated on stadiums
+         here to get the mapt to redraw markers. */
+      self.stadiums.valueHasMutated();
       self.emptysearch(emptysearch);
       setLastChildToClass(".stad-list-ul", "stad-list-last");
     }; // filterList
@@ -314,7 +320,7 @@ $(function() {
     }
 
     // DEBUG
-    window.stadiums = self.stadiums
+    window.stadiums = self.stadiums;
   }; // ViewModel
 
   /*
@@ -408,7 +414,10 @@ $(function() {
       console.log("Calling update on map");
       for (var i in value().stadiums()) {
         var stadium = value().stadiums()[i];
-        if (stadium.visible()) {
+        /* Call peek() on visible so we don't create a new dependency
+           that will cause this to be evaluated over and over. Massive
+           performance hit if we don't do this. */
+        if (stadium.visible.peek()) {
           stadium.marker().setMap(ctx.map);
           addClickListener(stadium.marker(), stadium, ctx);
         } else {
@@ -417,10 +426,10 @@ $(function() {
         }
       }
 
+
       function addClickListener(marker, data, bindingContext) {
         google.maps.event.addListener(marker, 'click', function() {
-          bindingContext.selectedStadium(data);
-          // TODO: reset remote data
+          bindingContext.showMarker(data);
         });
       }
     }
