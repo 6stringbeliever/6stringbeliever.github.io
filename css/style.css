@@ -88,14 +88,14 @@ footer {
   margin: 0px auto;
   padding: 26px;
   width: 900px;
-  max-width: 85%;
+  max-width: 90%;
 }
 
 .project {
   margin: 48px auto;
   padding: 24px;
   width: 900px;
-  max-width: 85%;
+  max-width: 90%;
   border: 2px solid #606060;
   border-radius: 0 10px 20px 10px;
   -webkit-box-shadow: 4px 4px 3px rgba(71, 83, 94, 0.5);
