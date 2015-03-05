@@ -15,7 +15,8 @@
                    img/code.png 535w"
            sizes="(min-width: 59em) 33em, 60vw"  src="img/code.png" alt="Shaun Can Code" class="hdr-logo"/>
     </header>
-    <section id="projects" data-bind="foreach: projects">
+    <section>
+      <!-- ko foreach: projects -->
       <div class="project">
         <h1 data-bind="text: name"></h1>
         <p data-bind="text: description"></p>
@@ -25,6 +26,19 @@
           <a data-bind="text: projecturl.name, attr: {href: projecturl.url}"></a></p>
         <p data-bind="if: sourceurl" class="proj-info"><strong>Source:</strong>
           <a data-bind="text: sourceurl.name, attr: {href: sourceurl.url}"></a></p>
+      </div>
+      <!-- /ko -->
+      <div class="project">
+        <h1>Additional Projects</h1>
+        <ul data-bind="foreach: littleprojects">
+          <li class="ltl-proj">
+            <p><span class="ltl-proj-name" data-bind="text: name"></span> — 
+              <span class="ltl-proj-desc" data-bind="text: description">
+            </p>
+            <p data-bind="if: url" class="proj-info"><strong>View:</strong>
+              <a data-bind="text: url.name, attr: {href: url.url}"></a></p>
+          </li>
+        </ul>
       </div>
     </section>
     <footer>

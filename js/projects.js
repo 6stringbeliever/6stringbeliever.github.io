@@ -2,7 +2,7 @@ $(function() {
 var projects = { 'projects': [{
   'name': 'Stadium Map',
   'images': [],
-  'description': 'Single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data from Wikipedia and Foursquare via AJAX.',
+  'description': 'Single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX.',
   'tools': 'HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API',
   'projecturl': {'name': 'American Stadiums Map',
                  'url': 'http://6stringbeliever.github.io/projects/stadium-map/'},
@@ -31,7 +31,7 @@ var projects = { 'projects': [{
 {
   'name': 'RFP Responder',
   'images': [],
-  'description': 'An application for managing boilerplate used for creating proposals in response to RFPs. Developed the entire front-end and back-end. For web development course in MS HCI program.',
+  'description': 'An application for managing boilerplate used for creating proposals in response to RFPs. Developed the entire front-end and back-end. Also, created initial wireframes and performed extensive usability testing. For web development course in MS HCI program.',
   'tools': 'HTML, CSS, JavaScript, jQuery, PHP, MySQL',
   'projecturl': {'name': 'RFP Responder',
                  'url': 'http://rfp.superawesomegood.com'},
@@ -45,7 +45,26 @@ var projects = { 'projects': [{
   'projecturl': null,
   'sourceurl': {'name': 'github',
                  'url': 'https://github.com/6stringbeliever/pico_portfolio'}
-}]};
+}],
+'littleprojects': [{
+  'name': 'Web Performance Optimization',
+  'description': 'Optimized sample portfolio site HTML, CSS, and JavaScript to achieve > 90 PageSpeed Insights scores on both desktop and mobile and achieve 60fps animation. For Udacity front-end nanodegree.',
+  'url': {'name': 'github',
+          'url': 'https://github.com/6stringbeliever/frontend-nanodegree-mobile-portfolio'}
+},
+{
+  'name': 'PDF Comp Coding',
+  'description': 'Based on a PDF comp of a sample site, coded HTML and CSS to achieve a > 99% visual match. For Udacity front-end nanodegree.',
+  'url': {'name': 'github',
+          'url': 'https://github.com/6stringbeliever/uda-nano-p1'}
+},
+{
+  'name': 'JavaScript Coding Challenge',
+  'description': 'Complete a series of FizzBuzz-type JavaScript challenges. For Udacity front-end nanodegree.',
+  'url': {'name': 'github',
+          'url': 'https://github.com/6stringbeliever/uda-nano-p2'}
+}
+]};
 
 ko.applyBindings(projects);
 });

@@ -4,7 +4,7 @@ $(function() {
   // TODO: Responsive
   // TODO: Error handling when not getting data
   // TODO: Photos layout
-  
+
   /*
       Stadium object. Holds all the data for a single stadium.
   */
@@ -88,6 +88,11 @@ $(function() {
   var Filter = function(data) {
     this.league = ko.observable(data.league);
     this.display = ko.observable(data.display);
+    this.imageSrc = ko.computed(function() {
+      var directory = "img/";
+      var filename = this.league().toLowerCase() + ".png";
+      return directory + filename;
+    }, this);
   };
 
   /*
@@ -211,6 +216,7 @@ $(function() {
   var ViewModel = function() {
     var self = this;
     var league;
+    var stadiumDataAlpha;
     var leagues = [];
     var i;
 
@@ -232,7 +238,23 @@ $(function() {
     self.stadiums.extend({ rateLimit: {
                               timeout: 20,
                               method: "notifyWhenChangesStop"} });
-    for (var stadium in stadiumData) {
+
+    /* Alphabetize the stadium list */
+    stadiumDataAlpha = stadiumData.sort(function(a, b) {
+      /* Upper case so sort is case insensitive. */
+      var aup = a.name.toUpperCase();
+      var bup = b.name.toUpperCase();
+      if (aup < bup) {
+        return -1;
+      }
+      if (aup > bup) {
+        return 1;
+      }
+      // a must be equal to b
+      return 0;
+    });
+
+    for (var stadium in stadiumDataAlpha) {
       self.stadiums.push(new Stadium(stadiumData[stadium]));
       for (i = 0; i < stadiumData[stadium].teams.length; i++) {
         var team = stadiumData[stadium].teams[i];

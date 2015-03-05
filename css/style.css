@@ -113,3 +113,12 @@ footer {
 .hdr-logo {
   max-width: 60%;
 }
+
+.ltl-proj {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.ltl-proj-name {
+  font-weight: 500;
+}
