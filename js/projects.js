@@ -1,4 +1,3 @@
-$(function() {
 var projects = { 'projects': [{
   'name': 'Stadium Map',
   'images': [],
@@ -67,4 +66,3 @@ var projects = { 'projects': [{
 ]};
 
 ko.applyBindings(projects);
-});
