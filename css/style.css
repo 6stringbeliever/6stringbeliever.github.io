@@ -127,7 +127,7 @@ footer {
   list-style: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 675px) {
   .elsewhere {
     margin-top: 0;
     float: left;
