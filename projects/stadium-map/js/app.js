@@ -89,8 +89,13 @@ $(function() {
     this.league = ko.observable(data.league);
     this.display = ko.observable(data.display);
     this.imageSrc = ko.computed(function() {
+      var filename;
       var directory = "img/";
-      var filename = this.league().toLowerCase() + ".png";
+      if (this.display()) {
+        filename = this.league().toLowerCase() + ".png";
+      } else {
+        filename = this.league().toLowerCase() + "-off.png";
+      }
       return directory + filename;
     }, this);
   };
@@ -134,8 +139,10 @@ $(function() {
             console.log("Got 4sq data");
             var addr, venue;
             venue = data.response.venues[0];
-            for (addr in venue.location.formattedAddress) {
-              stad.address.push(venue.location.formattedAddress[addr]);
+            if (stad.address.length === 0) {
+              for (addr in venue.location.formattedAddress) {
+                stad.address.push(venue.location.formattedAddress[addr]);
+              }
             }
             stad.foursquareid(venue.id);
             self.gettingFoursquareData = false;
@@ -160,9 +167,11 @@ $(function() {
           success: function(data) {
             console.log("got photos");
             var photos = data.response.photos.items;
-            for (var photo in photos) {
-              var photourl = photos[photo].prefix + "cap300" + photos[photo].suffix;
-              stad.photos.push(photourl);
+            if (stad.photos.length === 0) {
+              for (var photo in photos) {
+                var photourl = photos[photo].prefix + "cap300" + photos[photo].suffix;
+                stad.photos.push(photourl);
+              }
             }
             self.gettingFoursquarePhotos = false;
           },
@@ -184,7 +193,7 @@ $(function() {
           url: buildNYTimesArticleURL(stad.name()),
           success: function(data) {
             var docs;
-            if (data.status === 'OK') {
+            if (data.status === 'OK' && stad.articles.length === 0) {
               docs = data.response.docs;
               for (var doc in docs) {
                 stad.articles.push({
@@ -275,8 +284,16 @@ $(function() {
         Stadium list control li's are bound to this function on click.
     */
     self.showMarker = function(stadium) {
+      self.toggleMenuOpen();
       remoteDataHelper.reset();
       self.selectedStadium(stadium);
+    };
+
+    self.toggleMenuOpen = function() {
+      console.log("toggle");
+      $('#stad-list-hideable').toggleClass('stad-menu-offsmall');
+      $('#stad-list-menu-toggle .fa').toggleClass('fa-caret-down');
+      $('#stad-list-menu-toggle .fa').toggleClass('fa-caret-up');
     };
 
     self.toggleFilter = function(filter) {
@@ -404,7 +421,7 @@ $(function() {
         zoomControl: true,
         zoomControlOptions: {
             style: google.maps.ZoomControlStyle.SMALL,
-            position: google.maps.ControlPosition.LEFT_BOTTOM
+            position: google.maps.ControlPosition.RIGHT_BOTTOM
         },
       };
       var ctx = bindingContext.$data;
@@ -416,12 +433,16 @@ $(function() {
         them as map controls. This way we get all the goodness of map controls
         but don't have to worry about when to ko.applyBinding.
       */
-      google.maps.event.addListener(ctx.map, 'tilesloaded', function(e) {
+      google.maps.event.addListenerOnce(ctx.map, 'tilesloaded', function(e) {
+        console.log("adding event listener");
         var control = document.createElement('div');
         control.id = 'stadium-list-control';
         var list = $('#stadium-list').detach();
         ctx.map.controls[google.maps.ControlPosition.TOP_RIGHT].push(control);
         list.appendTo('#stadium-list-control');
+        $('#stad-list-menu-toggle').click(function() {
+          ctx.toggleMenuOpen();
+        });
       });
     },
 
@@ -451,7 +472,8 @@ $(function() {
 
       function addClickListener(marker, data, bindingContext) {
         google.maps.event.addListener(marker, 'click', function() {
-          bindingContext.showMarker(data);
+          remoteDataHelper.reset();
+          bindingContext.selectedStadium(data);
         });
       }
     }
