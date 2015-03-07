@@ -28,10 +28,6 @@ header {
           background-size: cover;
 }
 
-img {
-  margin: 50px 0;
-}
-
 h1, h2 {
   font-family: "Fira Sans", sans-serif;
   font-weight: 500;
@@ -111,6 +107,7 @@ footer {
 }
 
 .hdr-logo {
+  margin: 50px 0;
   max-width: 60%;
 }
 
@@ -125,6 +122,20 @@ footer {
 
 .contact-list li {
   list-style: none;
+}
+
+.profile-pic {
+  float: left;
+  border-radius: 50%;
+  max-width: 150px;
+  margin-right: 25px;
+}
+
+@media screen and (max-width: 450px) {
+  .profile-pic {
+    float: none;
+    max-width: 200px;
+  }
 }
 
 @media screen and (min-width: 675px) {
