@@ -124,6 +124,21 @@ footer {
 }
 
 .contact-list li {
-  display: inline;
   list-style: none;
+}
+
+@media screen and (min-width: 600px) {
+  .elsewhere {
+    margin-top: 0;
+    float: left;
+  }
+  .contact-list li {
+    display: inline;
+    padding: 0 8px;
+    margin-bottom: 0;
+    border-right: 1px solid white;
+  }
+  .contact-list li:last-child {
+    border-right: none;
+  }
 }
