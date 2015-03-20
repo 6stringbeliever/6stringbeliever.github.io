@@ -52,6 +52,12 @@ var projects = { 'projects': [{
           'url': 'https://github.com/6stringbeliever/frontend-nanodegree-mobile-portfolio'}
 },
 {
+  'name': 'JavaScript Testing with Jasmine',
+  'description': 'Create tests for a basic feed reader application using the Jasmine testing framework.',
+  'url': {'name': 'github',
+          'url': 'https://github.com/6stringbeliever/frontend-nanodegree-feedreader'}
+},
+{
   'name': 'PDF Comp Coding',
   'description': 'Based on a PDF comp of a sample site, coded HTML and CSS to achieve a > 99% visual match. For Udacity front-end nanodegree.',
   'url': {'name': 'github',
