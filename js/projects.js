@@ -1,7 +1,7 @@
 var projects = { 'projects': [{
   'name': 'Stadium Map',
   'images': [],
-  'description': 'Single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX.',
+  'description': 'Responsive, single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX. For Udacity front-end nanodegree.',
   'tools': 'HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API',
   'projecturl': {'name': 'American Stadiums Map',
                  'url': 'http://6stringbeliever.github.io/neighborhood-map/'},
@@ -53,7 +53,7 @@ var projects = { 'projects': [{
 },
 {
   'name': 'JavaScript Testing with Jasmine',
-  'description': 'Create tests for a basic feed reader application using the Jasmine testing framework.',
+  'description': 'Create tests for a basic feed reader application using the Jasmine testing framework. For Udacity front-end nanodegree.',
   'url': {'name': 'github',
           'url': 'https://github.com/6stringbeliever/frontend-nanodegree-feedreader'}
 },
