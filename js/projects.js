@@ -4,7 +4,7 @@ var projects = { 'projects': [{
   'description': 'Single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX.',
   'tools': 'HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API',
   'projecturl': {'name': 'American Stadiums Map',
-                 'url': 'http://6stringbeliever.github.io/projects/stadium-map/'},
+                 'url': 'http://6stringbeliever.github.io/neighborhood-map/'},
   'sourceurl': {'name': 'github',
                  'url': 'https://github.com/6stringbeliever/neighborhood-map'}
 },
@@ -23,7 +23,7 @@ var projects = { 'projects': [{
   'description': 'HTML5 canvas game. Collect gems and avoid getting hit by bugs. An exercise in object-oriented JavaScript for the Udacity Front-End Web Development nanodegree.',
   'tools': 'JavaScript',
   'projecturl': {'name': 'Frogger Clone (Sort Of)',
-                 'url': 'http://6stringbeliever.github.io/projects/arcade/'},
+                 'url': 'http://6stringbeliever.github.io/frontend-nanodegree-arcade-game/'},
   'sourceurl': {'name': 'github',
                  'url': 'https://github.com/6stringbeliever/frontend-nanodegree-arcade-game'}
 },
@@ -40,7 +40,7 @@ var projects = { 'projects': [{
   'name': 'Pico Portfolio',
   'images': [],
   'description': 'A plug-in for the Pico CMS for creating nifty portfolio sites.',
-  'tools': 'PHP, Twig Templates, Sass',
+  'tools': 'PHP, Twig Templates, HTML, Sass, CSS, jQuery',
   'projecturl': null,
   'sourceurl': {'name': 'github',
                  'url': 'https://github.com/6stringbeliever/pico_portfolio'}
