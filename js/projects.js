@@ -15,7 +15,8 @@ var projects = { 'projects': [{
   'tools': 'HTML, Sass/CSS',
   'projecturl': {'name': 'shaunandmaura.com',
                  'url': 'http://shaunandmaura.com'},
-  'sourceurl': null
+  'sourceurl': {'name': 'bitbucket',
+                'url': 'https://bitbucket.org/6stringbeliever/121314'}
 },
 {
   'name': 'Canvas Game',
@@ -34,13 +35,14 @@ var projects = { 'projects': [{
   'tools': 'HTML, CSS, JavaScript, jQuery, PHP, MySQL',
   'projecturl': {'name': 'RFP Responder',
                  'url': 'http://rfp.superawesomegood.com'},
-  'sourceurl': null
+                 'sourceurl': {'name': 'bitbucket',
+                               'url': 'https://bitbucket.org/6stringbeliever/rfp-responder'}
 },
 {
   'name': 'Pico Portfolio',
   'images': [],
   'description': 'A plug-in for the Pico CMS for creating nifty portfolio sites.',
-  'tools': 'PHP, Twig Templates, HTML, Sass, CSS, jQuery',
+  'tools': 'PHP, Twig Templates, HTML, Sass, CSS, JavaScript, jQuery',
   'projecturl': null,
   'sourceurl': {'name': 'github',
                  'url': 'https://github.com/6stringbeliever/pico_portfolio'}
