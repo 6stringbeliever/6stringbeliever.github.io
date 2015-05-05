@@ -2,22 +2,27 @@
 layout: default
 ---
 
-<div class="home">
+{% for project in site.data.projects.projects %}
+<div class="project">
+  <h1>{{ project.name }}</h1>
+  <p>{{ project.description }}</p>
+  <p class="proj-info"><strong>Tools:</strong> {{ project.tools }}</p>
+  <p class="proj-info"><strong>View:</strong> <a href="{{ project.projecturl.url }}">{{ project.projecturl.name }}</a></p>
+  <p class="proj-info"><strong>Source:</strong> <a href="{{ project.sourceurl.url }}">{{ project.sourceurl.name }}</a></p>
+</div>
+{% endfor %}
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<div class="project">
+  <h1>Additional Projects</h1>
+  <ul>
+{% for project in site.data.projects.littleprojects %}
+    <li class="ltl-proj">
+    <p><span class="ltl-proj-name">{{ project.name }}</span> —
+      <span class="ltl-proj-desc">{{ project.description }}</span>
+    </p>
+    <p class="proj-info"><strong>View:</strong>
+    <a href="{{ project.url.url }}">{{ project.url.name }}</a></p>
+    </li>
+{% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
