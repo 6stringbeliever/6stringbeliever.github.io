@@ -1,7 +1,7 @@
 { "projects": [{
   "name": "Stadium Map",
   "images": [],
-  "description": "Responsive, single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX. For Udacity front-end nanodegree.",
+  "description": "Responsive, single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX. For Udacity Front-End Web Developer nanodegree.",
   "tools": "HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API",
   "projecturl": {"name": "American Stadiums Map",
                  "url": "http://6stringbeliever.github.io/neighborhood-map/"},
@@ -21,7 +21,7 @@
 {
   "name": "Canvas Game",
   "images": [],
-  "description": "HTML5 canvas game. Collect gems and avoid getting hit by bugs. An exercise in object-oriented JavaScript for the Udacity Front-End Web Development nanodegree.",
+  "description": "HTML5 canvas game. Collect gems and avoid getting hit by bugs. An exercise in object-oriented JavaScript for the Udacity Front-End Web Developer nanodegree.",
   "tools": "JavaScript",
   "projecturl": {"name": "Frogger Clone (Sort Of)",
                  "url": "http://6stringbeliever.github.io/frontend-nanodegree-arcade-game/"},
@@ -49,25 +49,25 @@
 }],
 "littleprojects": [{
   "name": "Web Performance Optimization",
-  "description": "Optimized sample portfolio site HTML, CSS, and JavaScript to achieve > 90 PageSpeed Insights scores on both desktop and mobile and achieve 60fps animation. For Udacity front-end nanodegree.",
+  "description": "Optimized sample portfolio site HTML, CSS, and JavaScript to achieve > 90 PageSpeed Insights scores on both desktop and mobile and achieve 60fps animation. For Udacity Front-End Web Developer nanodegree.",
   "url": {"name": "github",
           "url": "https://github.com/6stringbeliever/frontend-nanodegree-mobile-portfolio"}
 },
 {
   "name": "JavaScript Testing with Jasmine",
-  "description": "Create tests for a basic feed reader application using the Jasmine testing framework. For Udacity front-end nanodegree.",
+  "description": "Create tests for a basic feed reader application using the Jasmine testing framework. For Udacity Front-End Web Developer nanodegree.",
   "url": {"name": "github",
           "url": "https://github.com/6stringbeliever/frontend-nanodegree-feedreader"}
 },
 {
   "name": "PDF Comp Coding",
-  "description": "Based on a PDF comp of a sample site, coded HTML and CSS to achieve a > 99% visual match. For Udacity front-end nanodegree.",
+  "description": "Coded responsive HTML and CSS with Bootstrap to achieve a > 99% visual match with a PDF comp. For Udacity Front-End Web Developer nanodegree.",
   "url": {"name": "github",
           "url": "https://github.com/6stringbeliever/uda-nano-p1"}
 },
 {
   "name": "JavaScript Coding Challenge",
-  "description": "Complete a series of FizzBuzz-type JavaScript challenges. For Udacity front-end nanodegree.",
+  "description": "Complete a series of FizzBuzz-type JavaScript challenges. For Udacity Front-End Web Developer nanodegree.",
   "url": {"name": "github",
           "url": "https://github.com/6stringbeliever/uda-nano-p2"}
 }

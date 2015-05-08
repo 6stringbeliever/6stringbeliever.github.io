@@ -7,12 +7,8 @@ layout: default
   <h1>{{ project.name }}</h1>
   <p>{{ project.description }}</p>
   <p class="proj-info"><strong>Tools:</strong> {{ project.tools }}</p>
-  {% if project.projecturl.url != null %}
-  <p class="proj-info"><strong>View:</strong> <a href="{{ project.projecturl.url }}">{{ project.projecturl.name }}</a></p>
-  {% endif %}
-  {% if project.sourceurl.url != null %}
-  <p class="proj-info"><strong>Source:</strong> <a href="{{ project.sourceurl.url }}">{{ project.sourceurl.name }}</a></p>
-  {% endif %}
+  {% if project.projecturl.url != null %}<p class="proj-info"><strong>View:</strong> <a href="{{ project.projecturl.url }}">{{ project.projecturl.name }}</a></p>{% endif %}
+  {% if project.sourceurl.url != null %}<p class="proj-info"><strong>Source:</strong> <a href="{{ project.sourceurl.url }}">{{ project.sourceurl.name }}</a></p>{% endif %}
 </div>
 {% endfor %}
 
