@@ -4,7 +4,6 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   color: #333;
-
 }
 
 *, *:before, *:after {
@@ -61,12 +60,24 @@ a {
           transition: color 0.5s ease;
 }
 
+a:visited {
+  color: darken(#205e88, 20%);
+  -webkit-transition: color 0.5s ease;
+     -moz-transition: color 0.5s ease;
+       -o-transition: color 0.5s ease;
+          transition: color 0.5s ease;
+}
+
 a:hover {
   color: #10a8ea;
 }
 
 footer a {
   color: #60b1f7;
+}
+
+footer a:visited {
+  color: darken(#60b1f7, 20%);
 }
 
 footer a:hover {
