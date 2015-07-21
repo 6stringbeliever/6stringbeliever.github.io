@@ -1,6 +1,6 @@
 { "projects": [{
   "name": "Stadium Map",
-  "images": [],
+  "images": ["stadium-map.jpg"],
   "description": "Responsive, single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX. For Udacity Front-End Web Developer nanodegree.",
   "tools": "HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API",
   "projecturl": {"name": "American Stadiums Map",

@@ -105,8 +105,8 @@ footer {
   max-width: 90%;
   border: 2px solid #606060;
   border-radius: 0 10px 20px 10px;
-  -webkit-box-shadow: 4px 4px 3px rgba(71, 83, 94, 0.5);
-          box-shadow: 4px 4px 3px rgba(71, 83, 94, 0.5);
+  -webkit-box-shadow: 3px 3px 5px rgba(71, 83, 94, 0.5);
+          box-shadow: 3px 3px 5px rgba(71, 83, 94, 0.5);
 }
 
 .project:nth-child(odd) {
@@ -115,6 +115,29 @@ footer {
 
 .project:nth-child(even) {
   background-color: rgba(215, 215, 215, 0.92);
+}
+
+.projects {
+  float: left;
+  clear: all;
+}
+
+.project {
+  float: left;
+  clear: all;
+}
+
+.project-img {
+  float: left;
+  margin-right: 24px;
+  img {
+    max-width: 300px;
+  }
+}
+
+.project-text {
+  float: right;
+  max-width: 400px;
 }
 
 .hdr-logo {
