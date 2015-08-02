@@ -1,6 +1,6 @@
 { "projects": [{
   "name": "Stadium Map",
-  "images": [],
+  "images": ["stadium-map-med.jpg"],
   "description": "Responsive, single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX. For Udacity Front-End Web Developer nanodegree.",
   "tools": "HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API",
   "projecturl": {"name": "American Stadiums Map",
@@ -10,7 +10,7 @@
 },
 {
   "name": "Responsive Wedding Website",
-  "images": [],
+  "images": ["wedding-med.jpg"],
   "description": "A single page, responsive website showing details for our 12.13.14 wedding.",
   "tools": "HTML, Sass/CSS",
   "projecturl": {"name": "shaunandmaura.com",
@@ -20,7 +20,7 @@
 },
 {
   "name": "Canvas Game",
-  "images": [],
+  "images": ["frogger-med.jpg"],
   "description": "HTML5 canvas game. Collect gems and avoid getting hit by bugs. An exercise in object-oriented JavaScript for the Udacity Front-End Web Developer nanodegree.",
   "tools": "JavaScript",
   "projecturl": {"name": "Frogger Clone (Sort Of)",
@@ -30,7 +30,7 @@
 },
 {
   "name": "RFP Responder",
-  "images": [],
+  "images": ["rfp-med.jpg"],
   "description": "An application for managing boilerplate used for creating proposals in response to RFPs. Developed the entire front-end and back-end. Also, created initial wireframes and performed extensive usability testing. For web development course in MS HCI program.",
   "tools": "HTML, CSS, JavaScript, jQuery, PHP, MySQL",
   "projecturl": {"name": "RFP Responder",
