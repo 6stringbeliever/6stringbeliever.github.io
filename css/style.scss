@@ -107,14 +107,47 @@ footer {
   border-radius: 0 10px 20px 10px;
   -webkit-box-shadow: 4px 4px 3px rgba(71, 83, 94, 0.5);
           box-shadow: 4px 4px 3px rgba(71, 83, 94, 0.5);
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &:nth-child(odd) {
+    background-color: rgba(193, 193, 193, 0.9);
+    .project-screenshot {
+        border: 12px solid rgba(215, 215, 215, 0.92);
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: rgba(215, 215, 215, 0.92);
+    .project-screenshot {
+        border: 12px solid rgba(193, 193, 193, 0.9);
+    }
+  }
 }
 
-.project:nth-child(odd) {
-  background-color: rgba(193, 193, 193, 0.9);
+.project-img {
+  @media screen and (min-width: 650px) {
+    float: left;
+  }
 }
 
-.project:nth-child(even) {
-  background-color: rgba(215, 215, 215, 0.92);
+.project-screenshot {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 0 auto;
+  @media screen and (min-width: 650px) {
+    max-width: 250px;
+    max-height: 250px;
+    margin-right: 24px;
+  }
+}
+
+.project-text {
+
 }
 
 .hdr-logo {
