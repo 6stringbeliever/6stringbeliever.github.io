@@ -9,6 +9,16 @@
                  "url": "https://github.com/6stringbeliever/neighborhood-map"}
 },
 {
+  "name": "Evntr",
+  "images": ["evntr-med.jpg"],
+  "description": "Responsive event application prototype. Home page displays events you've created and includes forms for signing up, logging in, and creating events. Built a client-side validation library that uses the new HTLM5 web form validation API. Allows you to search for location suggestions from Foursquare either by address/ZIP or nearby, using the geolocation API. Built a very basic simulated backend using local storage. For Udacity Senior Web Developer nanodegree.",
+  "tools": "HTML, Sass/CSS, JavaScript, Mustache.js, Foursquare API, local storage API, geolocation API, web form validation API",
+  "projecturl": {"name": "Evntr",
+                 "url": "http://6stringbeliever.github.io/evntr-mobile/"},
+  "sourceurl": {"name": "github",
+                 "url": "https://github.com/6stringbeliever/evntr-mobile"}
+},
+{
   "name": "Responsive Wedding Website",
   "images": ["wedding-med.jpg"],
   "description": "A single page, responsive website showing details for our 12.13.14 wedding.",
