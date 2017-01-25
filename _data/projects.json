@@ -1,84 +1,103 @@
-{ "projects": [{
-  "name": "Stadium Map",
-  "images": ["stadium-map-med.jpg"],
-  "description": "Responsive, single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX. For Udacity Front-End Web Developer nanodegree.",
-  "tools": "HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API",
-  "projecturl": {"name": "American Stadiums Map",
-                 "url": "http://6stringbeliever.github.io/neighborhood-map/"},
-  "sourceurl": {"name": "github",
-                 "url": "https://github.com/6stringbeliever/neighborhood-map"}
-},
 {
-  "name": "Evntr",
-  "images": ["evntr-med.jpg"],
-  "description": "Responsive event application prototype. Home page displays events you've created and includes forms for signing up, logging in, and creating events. Built a client-side validation library that uses the new HTLM5 web form validation API. Allows you to search for location suggestions from Foursquare either by address/ZIP or nearby, using the geolocation API. Built a very basic simulated backend using local storage. For Udacity Senior Web Developer nanodegree.",
-  "tools": "HTML, Sass/CSS, JavaScript, Mustache.js, Foursquare API, local storage API, geolocation API, web form validation API",
-  "projecturl": {"name": "Evntr",
-                 "url": "http://6stringbeliever.github.io/evntr-mobile/"},
-  "sourceurl": {"name": "github",
-                 "url": "https://github.com/6stringbeliever/evntr-mobile"}
-},
-{
-  "name": "Responsive Wedding Website",
-  "images": ["wedding-med.jpg"],
-  "description": "A single page, responsive website showing details for our 12.13.14 wedding.",
-  "tools": "HTML, Sass/CSS",
-  "projecturl": {"name": "shaunandmaura.com",
-                 "url": "http://shaunandmaura.com"},
-  "sourceurl": {"name": "bitbucket",
-                "url": "https://bitbucket.org/6stringbeliever/121314"}
-},
-{
-  "name": "Canvas Game",
-  "images": ["frogger-med.jpg"],
-  "description": "HTML5 canvas game. Collect gems and avoid getting hit by bugs. An exercise in object-oriented JavaScript for the Udacity Front-End Web Developer nanodegree.",
-  "tools": "JavaScript",
-  "projecturl": {"name": "Frogger Clone (Sort Of)",
-                 "url": "http://6stringbeliever.github.io/frontend-nanodegree-arcade-game/"},
-  "sourceurl": {"name": "github",
-                 "url": "https://github.com/6stringbeliever/frontend-nanodegree-arcade-game"}
-},
-{
-  "name": "RFP Responder",
-  "images": ["rfp-med.jpg"],
-  "description": "An application for managing boilerplate used for creating proposals in response to RFPs. Developed the entire front-end and back-end. Also, created initial wireframes and performed extensive usability testing. For web development course in MS HCI program.",
-  "tools": "HTML, CSS, JavaScript, jQuery, PHP, MySQL",
-  "projecturl": {"name": "RFP Responder",
-                 "url": "http://rfp.superawesomegood.com"},
-                 "sourceurl": {"name": "bitbucket",
-                               "url": "https://bitbucket.org/6stringbeliever/rfp-responder"}
-},
-{
-  "name": "Pico Portfolio",
-  "images": [],
-  "description": "A plug-in for the Pico CMS for creating nifty portfolio sites.",
-  "tools": "PHP, Twig Templates, HTML, Sass, CSS, JavaScript, jQuery",
-  "projecturl": null,
-  "sourceurl": {"name": "github",
-                 "url": "https://github.com/6stringbeliever/pico_portfolio"}
-}],
-"littleprojects": [{
-  "name": "Web Performance Optimization",
-  "description": "Optimized sample portfolio site HTML, CSS, and JavaScript to achieve > 90 PageSpeed Insights scores on both desktop and mobile and achieve 60fps animation. For Udacity Front-End Web Developer nanodegree.",
-  "url": {"name": "github",
-          "url": "https://github.com/6stringbeliever/frontend-nanodegree-mobile-portfolio"}
-},
-{
-  "name": "JavaScript Testing with Jasmine",
-  "description": "Create tests for a basic feed reader application using the Jasmine testing framework. For Udacity Front-End Web Developer nanodegree.",
-  "url": {"name": "github",
-          "url": "https://github.com/6stringbeliever/frontend-nanodegree-feedreader"}
-},
-{
-  "name": "PDF Comp Coding",
-  "description": "Coded responsive HTML and CSS with Bootstrap to achieve a > 99% visual match with a PDF comp. For Udacity Front-End Web Developer nanodegree.",
-  "url": {"name": "github",
-          "url": "https://github.com/6stringbeliever/uda-nano-p1"}
-},
-{
-  "name": "JavaScript Coding Challenge",
-  "description": "Complete a series of FizzBuzz-type JavaScript challenges. For Udacity Front-End Web Developer nanodegree.",
-  "url": {"name": "github",
-          "url": "https://github.com/6stringbeliever/uda-nano-p2"}
+    "projects": [{
+        "name": "Freelance Site",
+        "images": ["ub/ub1.png"],
+        "description": "Responsive web site and application for freelance developers and projects. As part of a team, I was responsible for building responsive React components and maintaining the project style guide. I was the go-to on the project for solving responsive layout issues.",
+        "tools": "HTML, Sass/CSS, React.js, Webpack"
+    }, {
+        "name": "Tech Flash Sale Sites",
+        "images": ["firestarter/fs1.png"],
+        "description": "Built a Shopify template for a tech client to launch branded flash sale sites. Interactive components built using React.js.",
+        "tools": "HTML, Shopify/Liquid templates, Sass/CSS, React.js, gulp+Webpack"
+    }, {
+        "name": "Cancer Research Fund",
+        "images": ["cancer/cancer3.png"],
+        "description": "Built responsive front-end for cancer research fund website to be integrated into Rails backend.",
+        "tools": "HTML, Sass/CSS, JavaScript, gulp"
+    }, {
+        "name": "Non-Profit Site",
+        "images": ["ec/ec2.png"],
+        "description": "Numerous bug fixes and additional features for non-profit website.",
+        "tools": "HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API"
+    }, {
+        "name": "Aerospace Startup",
+        "images": ["aero/aero1.gif"],
+        "description": "Update for aerospace startup website. Built custom HTML-canvas based parallax library for improved site performance. Converted website to Jekyll for easier updates. Add integration with HelloSign API to allow NDA signing on company website.",
+        "tools": "HTML, Sass/CSS, Jekyll, gulp, PHP, HelloSign API"
+    }, {
+        "name": "Stadium Map",
+        "images": ["stadium-map-med.jpg"],
+        "description": "Responsive, single page Google Maps application. Shows all the current stadiums for the MLB, NFL, NBA, NHL, and MLS. With search functions, and integrates data and photos from Foursquare and the New York Times via AJAX. For Udacity Front-End Web Developer nanodegree.",
+        "tools": "HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API",
+        "projecturl": {
+            "name": "American Stadiums Map",
+            "url": "http://6stringbeliever.github.io/neighborhood-map/"
+        },
+        "sourceurl": {
+            "name": "github",
+            "url": "https://github.com/6stringbeliever/neighborhood-map"
+        }
+    }, {
+        "name": "Evntr",
+        "images": ["evntr-med.jpg"],
+        "description": "Responsive event application prototype. Home page displays events you've created and includes forms for signing up, logging in, and creating events. Built a client-side validation library that uses the new HTLM5 web form validation API. Allows you to search for location suggestions from Foursquare either by address/ZIP or nearby, using the geolocation API. Built a very basic simulated backend using local storage. For Udacity Senior Web Developer nanodegree.",
+        "tools": "HTML, Sass/CSS, JavaScript, Mustache.js, Foursquare API, local storage API, geolocation API, web form validation API",
+        "projecturl": {
+            "name": "Evntr",
+            "url": "http://6stringbeliever.github.io/evntr-mobile/"
+        },
+        "sourceurl": {
+            "name": "github",
+            "url": "https://github.com/6stringbeliever/evntr-mobile"
+        }
+    }, {
+        "name": "RFP Responder",
+        "images": ["rfp-med.jpg"],
+        "description": "An application for managing boilerplate used for creating proposals in response to RFPs. Developed the entire front-end and back-end. Also, created initial wireframes and performed extensive usability testing. For web development course in MS HCI program.",
+        "tools": "HTML, CSS, JavaScript, jQuery, PHP, MySQL",
+        "projecturl": {
+            "name": "RFP Responder",
+            "url": "http://rfp.superawesomegood.com"
+        },
+        "sourceurl": {
+            "name": "bitbucket",
+            "url": "https://bitbucket.org/6stringbeliever/rfp-responder"
+        }
+    }],
+    "littleprojects": [{
+        "name": "Canvas Game",
+        "description": "HTML5 canvas game. Collect gems and avoid getting hit by bugs. An exercise in object-oriented JavaScript for the Udacity Front-End Web Developer nanodegree.",
+        "url": {
+            "name": "github",
+            "url": "https://github.com/6stringbeliever/frontend-nanodegree-arcade-game"
+        }
+    }, {
+        "name": "Web Performance Optimization",
+        "description": "Optimized sample portfolio site HTML, CSS, and JavaScript to achieve > 90 PageSpeed Insights scores on both desktop and mobile and achieve 60fps animation. For Udacity Front-End Web Developer nanodegree.",
+        "url": {
+            "name": "github",
+            "url": "https://github.com/6stringbeliever/frontend-nanodegree-mobile-portfolio"
+        }
+    }, {
+        "name": "JavaScript Testing with Jasmine",
+        "description": "Create tests for a basic feed reader application using the Jasmine testing framework. For Udacity Front-End Web Developer nanodegree.",
+        "url": {
+            "name": "github",
+            "url": "https://github.com/6stringbeliever/frontend-nanodegree-feedreader"
+        }
+    }, {
+        "name": "PDF Comp Coding",
+        "description": "Coded responsive HTML and CSS with Bootstrap to achieve a > 99% visual match with a PDF comp. For Udacity Front-End Web Developer nanodegree.",
+        "url": {
+            "name": "github",
+            "url": "https://github.com/6stringbeliever/uda-nano-p1"
+        }
+    }, {
+        "name": "JavaScript Coding Challenge",
+        "description": "Complete a series of FizzBuzz-type JavaScript challenges. For Udacity Front-End Web Developer nanodegree.",
+        "url": {
+            "name": "github",
+            "url": "https://github.com/6stringbeliever/uda-nano-p2"
+        }
+    }]
 }
-]}
