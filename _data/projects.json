@@ -17,8 +17,8 @@
     }, {
         "name": "Non-Profit Site",
         "images": ["ec/ec2.png"],
-        "description": "Numerous bug fixes and additional features for non-profit website.",
-        "tools": "HTML, Sass/CSS, Knockout.js, jQuery, gulp, Google Maps API, Foursquare API"
+        "description": "Numerous bug fixes and additional features for non-profit website. Site is built on Squarespace using a custom JavaScript front-end featuring cutting edge ESNext.",
+        "tools": "HTML, Sass/CSS, JavaScript, Webpack, Squarespace"
     }, {
         "name": "Aerospace Startup",
         "images": ["aero/aero1.gif"],
