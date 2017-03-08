@@ -3,7 +3,7 @@
         "name": "Freelance Site",
         "images": ["ub/ub1.png"],
         "description": "Responsive web site and application for freelance developers and projects. As part of a team, I was responsible for building responsive React components and maintaining the project style guide. I was the go-to on the project for solving responsive layout issues.",
-        "tools": "HTML, Sass/CSS, React.js, Webpack"
+        "tools": "HTML, Sass/CSS, React.js, Redux, Jest, Webpack"
     }, {
         "name": "Tech Flash Sale Sites",
         "images": ["firestarter/fs1.png"],
