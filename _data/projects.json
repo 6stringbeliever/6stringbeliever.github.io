@@ -1,5 +1,10 @@
 {
     "projects": [{
+        "name": "Personal Finance Startup",
+        "images": ["astra/astra1.png"],
+        "description": "Mobile web application for a pre-beta personal finance startup using machine learning. As part of a team, built front-end features using a React/Redux-based stack and spearheaded efforts tracking and fixing bugs using Sentry.",
+        "tools": "React.js, Redux, Reselect, Redux Thunk, Material UI, Styled Components, Jest, Webpack, Python, Flask, Google App Engine"
+    }, {
         "name": "Freelance Site",
         "images": ["ub/ub1.png"],
         "description": "Responsive web site and application for freelance developers and projects. As part of a team, I was responsible for building responsive React components and maintaining the project style guide. I was the go-to on the project for solving responsive layout issues.",
@@ -9,6 +14,11 @@
         "images": ["firestarter/fs1.png"],
         "description": "Built a Shopify template for a tech client to launch branded flash sale sites. Interactive components built using React.js.",
         "tools": "HTML, Shopify/Liquid templates, Sass/CSS, React.js, gulp+Webpack"
+    }, {
+        "name": "Shoap Technical Services",
+        "images": ["shoap/shoap1.png"],
+        "description": "Responsive retrofit for an existing WordPress website for a consulting firm. Updated existing design to work responsively across all devices, from phones to desktop.",
+        "tools": "HTML, CSS, JavaScript, jQuery, WordPress"
     }, {
         "name": "Cancer Research Fund",
         "images": ["cancer/cancer3.png"],
