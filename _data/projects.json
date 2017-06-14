@@ -1,7 +1,7 @@
 {
     "projects": [{
         "name": "Personal Finance Startup",
-        "images": ["astra/astra1.png"],
+        "images": ["astra/astra1-thumb.png"],
         "description": "Mobile web application for a pre-beta personal finance startup using machine learning. As part of a team, built front-end features using a React/Redux-based stack and spearheaded efforts tracking and fixing bugs using Sentry.",
         "tools": "React.js, Redux, Reselect, Redux Thunk, Material UI, Styled Components, Jest, Webpack, Python, Flask, Google App Engine"
     }, {
@@ -16,7 +16,7 @@
         "tools": "HTML, Shopify/Liquid templates, Sass/CSS, React.js, gulp+Webpack"
     }, {
         "name": "Shoap Technical Services",
-        "images": ["shoap/shoap1.png"],
+        "images": ["shoap/shoap1-thumb.png"],
         "description": "Responsive retrofit for an existing WordPress website for a consulting firm. Updated existing design to work responsively across all devices, from phones to desktop.",
         "tools": "HTML, CSS, JavaScript, jQuery, WordPress"
     }, {
