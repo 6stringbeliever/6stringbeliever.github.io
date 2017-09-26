@@ -1,14 +1,22 @@
 {
     "projects": [{
-        "name": "Personal Finance Startup",
+        "name": "Astra Finance",
         "images": ["astra/astra1-thumb.png"],
-        "description": "Mobile web application for a pre-beta personal finance startup using machine learning. As part of a team, built front-end features using a React/Redux-based stack and spearheaded efforts tracking and fixing bugs using Sentry.",
-        "tools": "React.js, Redux, Reselect, Redux Thunk, Material UI, Styled Components, Jest, Webpack, Python, Flask, Google App Engine"
+        "description": "Mobile web application for a beta-stage personal finance startup using machine learning. As part of a team, built front-end features using a React/Redux-based stack and spearheaded efforts tracking and fixing bugs using Sentry.",
+        "tools": "React.js, Redux, Reselect, Redux Thunk, Material UI, Styled Components, Jest, Webpack, Python, Flask, Google App Engine",
+        "projecturl": {
+            "name": "Astra Finance",
+            "url": "https://beta.astra.finance/"
+        }
     }, {
-        "name": "Freelance Site",
+        "name": "Udacity Blitz",
         "images": ["ub/ub1.png"],
         "description": "Responsive web site and application for freelance developers and projects. As part of a team, I was responsible for building responsive React components and maintaining the project style guide. I was the go-to on the project for solving responsive layout issues.",
-        "tools": "HTML, Sass/CSS, React.js, Redux, Jest, Webpack"
+        "tools": "HTML, Sass/CSS, React.js, Redux, Jest, Webpack",
+        "projecturl": {
+            "name": "Udacity Blitz",
+            "url": "https://blitz.com/"
+        }
     }, {
         "name": "Tech Flash Sale Sites",
         "images": ["firestarter/fs1.png"],
@@ -18,7 +26,11 @@
         "name": "Shoap Technical Services",
         "images": ["shoap/shoap1-thumb.png"],
         "description": "Responsive retrofit for an existing WordPress website for a consulting firm. Updated existing design to work responsively across all devices, from phones to desktop.",
-        "tools": "HTML, CSS, JavaScript, jQuery, WordPress"
+        "tools": "HTML, CSS, JavaScript, jQuery, WordPress",
+        "projecturl": {
+            "name": "Shoap Technical Services",
+            "url": "https://shoap.com/"
+        }
     }, {
         "name": "Cancer Research Fund",
         "images": ["cancer/cancer3.png"],
@@ -66,8 +78,8 @@
         "description": "An application for managing boilerplate used for creating proposals in response to RFPs. Developed the entire front-end and back-end. Also, created initial wireframes and performed extensive usability testing. For web development course in MS HCI program.",
         "tools": "HTML, CSS, JavaScript, jQuery, PHP, MySQL",
         "projecturl": {
-            "name": "RFP Responder",
-            "url": "http://rfp.superawesomegood.com"
+            "name": "RFP Responder Demo",
+            "url": "https://www.youtube.com/edit?o=U&video_id=mJioHgIad6k"
         },
         "sourceurl": {
             "name": "bitbucket",
